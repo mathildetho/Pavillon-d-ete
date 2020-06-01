@@ -16,6 +16,7 @@ body {
 h2 {
 	text-align: center;
 	font-size:3rem;
+	margin-bottom: 2rem;
 }
 
 h3 {
@@ -204,26 +205,29 @@ nav {
 }
     
 .titreartiste {
-    background-color: white;
-    color: #474CE4;
-    font-size: 1rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 600;
     margin-bottom: 10px;
     display: block;
 }
     
 .date {
-    background-color: white;
-    color: #474CE4;
     font-size: 1rem;
     margin-bottom: 20px;
     display: block;
 }
     
 .soundcloud {
-	color:white;
+	text-decoration: none;
+	border-radius: 20px;
+	text-align: center;
+	background-color: #fff;
+	color: #b192f9;
     display: block;
     cursor: pointer;
-    margin-top: 2%; 
+	margin-top:0.5rem; 
+	width: 7rem;
 }
 
 .containermusic {
@@ -242,100 +246,47 @@ nav {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    width: 40%;
+	width: 80%;
+	margin: 1rem auto;
 }
     
 .musicbloc1, .musicbloc2 , .musicbloc3, .musicbloc4 {
-    display: flex;
+	display: flex;
+	flex-direction: column;
+    margin: auto;
     margin-bottom: 60px;
-    justify-content: center;
+	background-color: #b192f9;
+	border-radius: 30px;
+	width:80%;
 }  
  
 .imgmusicbloc1, .imgmusicbloc2 {
-	width:45%;
-	margin-right: 20px;
+	width: 100%;
+	height:15rem;
 	object-fit: cover;
+	border-radius: 20px 20px 0 0;
 }
 
 .imgmusicbloc3 {
-	width:45%;
+	width: 100%;
+	height:15rem;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
 	margin-right: 20px;
 	object-fit: contain;
 	background-color: #fff;
 }
 
 .imgmusicbloc4 {
-	width:45%;
+	width: 100%;
+	height:15rem;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
 	margin-right: 20px;
 	object-fit: contain;
-	background-color: #1c1919;
+	background-color: #161414;
 }
 
-
-    
-
-
-
-/*SECTION 3 FOOD*/
-.nomfoodtruck {
-    font-size: 1rem;
-}
-
-.foodtexte1,.foodtexte3 {
-	flex-direction: column;
-    display: flex;
-    margin:auto;
-    width: 50%;
-    padding-left:2rem;
-}
-   
-.foodtexte2 {
-	flex-direction: column;
-    display: flex;
-    margin:auto;
-    width: 50%;
-    padding-right:2rem;
-}
-   
-.foodbloc1, .foodbloc2, .foodbloc3 {
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: center;
-	width:90%;
-}
-
-.imgfoodbloc1, .imgfoodbloc3 {
-    width: 50%;
-    object-fit: contain;
-    background-color: white; 
-}
-
-.imgfoodbloc2 {
-    width: 50%;
-    margin-left: 20px;
-    object-fit: contain;
-    background-color: white;
-}
-
-.menu {
-    text-align: center;
-    background-color: rgb(96, 147, 206);
-    border-radius: 30px;
-    width: 10rem;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-}
-
-.containerfood {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 1rem;
-}
-        
 .bloc12 {
     display: flex;
     flex-direction: column;
@@ -346,11 +297,52 @@ nav {
     flex-direction: column;  
 }
 
+    
+
+
+
+/*SECTION 3 FOOD*/
+.nomfoodtruck {
+    font-size: 1rem;
+}
+
+.foodtexte {
+	flex-direction: column;
+    display: flex;
+	margin-left:auto;
+	margin-right: auto;
+    width: 80%;
+	padding: 1rem 0;
+	color:#fff;
+}
+   
+.foodbloc {
+	display: flex;
+	margin:auto;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.4);;
+	border-radius: 30px;
+	margin-bottom: 1.5rem;
+	width:70%;
+}
+
+.imgfoodbloc {
+    width: 100%;
+	object-fit: cover;
+	height:15rem;
+	border-radius: 20px 20px 0 0;
+}
+
+.containerfood {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+        
 .imgfood {
 	display: flex;
 	justify-content: center;
-	width: 50%;
-	background-color: #fff;
 } 
 
 
@@ -394,18 +386,8 @@ nav {
     margin-left: 2rem;
     margin-bottom: 1.2rem;
     font-size: 0.9rem;
-    cursor: default;
-    transition-property: font-size;
-    transition-duration: 4s;
-    transition-delay: 2s;
     text-align: center;
 }
-
-.OiAku_p1:hover, .OiAku_p2:hover, .OiAku_p3:hover {
-	transform: scale(1.2);
-	box-shadow: black;
-}
-
 
 
 
@@ -514,7 +496,6 @@ textarea {
 
 .logo_facebook:hover, .logo_instagram:hover, .logo_soundcloud:hover {
 	cursor: pointer;
-	transform: scale(1.25);
 }
 
 /*FOOTER*/
@@ -564,7 +545,11 @@ l'ensemble du contenu CSS en modifiant les parties concernées ; un troisième e
 
       .containermusic {
         flex-direction: row;
-      } 
+	  } 
+	  .imgmusicbloc1 {
+		object-position: 0 -3rem;
+	}
+	
 }
 
 
@@ -575,6 +560,12 @@ l'ensemble du contenu CSS en modifiant les parties concernées ; un troisième e
 	.OiAku {
 		width:80%;
 		font-size:5rem;
+	}
+	.musicbloc1, .musicbloc3 {
+		margin-right: 2rem;
+	}
+	.imgmusicbloc1 {
+		object-position: 0 -3rem;
 	}
 
 	.our_history {
@@ -698,31 +689,11 @@ l'ensemble du contenu CSS en modifiant les parties concernées ; un troisième e
     .date {
         font-size: 2rem;
     }
-        
-    .imgmusicbloc1, .imgmusicbloc2{
-        width: 45%;
-        object-fit:cover;
+
+	.foodbloc {
+		margin:0 0.5rem;
+		width:30%;
 	}
-
-    .imgmusicbloc4 {
-        width: 45%;
-        object-fit:contain;
-        background-color: rgb(19, 18, 18);
-	}
-
-	.imgmusicbloc3 {
-        width: 45%;
-        object-fit:contain;
-        background-color: #fff;
-	}
-
-    .imgfoodbloc2 {
-        width: 50%;
-    }
-
-    .containerfood {
-        font-size: 1rem;
-      }
 
     .bloc12 {
     	flex-direction: row;
@@ -732,10 +703,6 @@ l'ensemble du contenu CSS en modifiant les parties concernées ; un troisième e
     	flex-direction: row;
     }
     
-    .musicbloc1, .musicbloc2 , .musicbloc3, .musicbloc4 {
-   		 width:50%;
-	}  
-
 }
 
 
